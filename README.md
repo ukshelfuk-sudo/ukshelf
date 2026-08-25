@@ -10,16 +10,12 @@ shipped from within the United Kingdom.
 - `js/main.js` — mobile nav, drop-list form (localStorage demo)
 - `assets/favicon.svg` — brand mark
 
-## Deploy (GitHub Pages + custom domain)
+## Deployed 🎉
 
-1. Create a GitHub repository (e.g. `ukshelf/ukshelf`).
-2. Push this folder's contents to the repo.
-3. Repo → **Settings → Pages** → Source: *Deploy from a branch* → `main` / root.
-4. Under **Custom domain**, enter `ukshelf.online` and save (GitHub adds a `CNAME`).
-5. At the DNS provider (Namecheap), add DNS records:
-   - `CNAME  ukshelf.online  →  <user>.github.io`
-   - 4 × `A  ukshelf.online  →  185.199.108.153 / .109 / .110 / .111`
-6. HTTPS is enabled automatically (takes a few minutes).
+- **Live at:** https://ukshelf.online (HTTP works now; HTTPS auto-issues once GitHub verifies DNS — usually minutes to a few hours, then "Enforce HTTPS" turns on)
+- **Repo:** https://github.com/ukshelfuk-sudo/ukshelf (branch `main`, Pages = deploy from branch/root)
+- **DNS (Porkbun):** ALIAS `ukshelf.online` → `ukshelfuk-sudo.github.io` (parking records removed)
+- **Local preview:** `python3 -m http.server 8787` from this folder
 
 ## Next steps before the first drop
 
