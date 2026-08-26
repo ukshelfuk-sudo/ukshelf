@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>UK Shelf — Curated trending products, shipped from the UK</title>
-  <meta name="description" content="UK Shelf curates the most-wanted trending products — picked from TikTok, Instagram and beyond, always shipped from within the United Kingdom." />
+  <title>UK Shelf — One shelf. Only what's worth it.</title>
+  <meta name="description" content="UK Shelf curates trending, problem-solving products — verified with UK suppliers, shipped from within the United Kingdom." />
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="css/style.css" />
   <script defer data-domain="ukshelf.online" src="https://plausible.io/js/script.js"></script>
@@ -23,6 +23,7 @@
         <span class="brand-name">UK Shelf</span>
       </a>
       <nav class="site-nav" aria-label="Main">
+        <a href="#products">Products</a>
         <a href="#drop">The drop</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -32,85 +33,109 @@
   <main id="top">
     <!-- Hero -->
     <section class="hero">
-      <div class="container">
+      <div class="container hero-inner">
         <p class="eyebrow">🇬🇧 Ships from the UK</p>
-        <h1>One shelf. <br />Only what's worth it.</h1>
-        <p class="lead">UK Shelf finds the products trending on TikTok and Instagram, verifies them with UK-based suppliers, and lists the best one or two. That's it.</p>
+        <h1>One shelf.<br />Only what's <span class="accent">worth it.</span></h1>
+        <p class="lead">UK Shelf hunts trending, problem-solving products, verifies them with UK suppliers, and keeps the one or two that genuinely fix a problem. That's it.</p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="#drop">See the first drop</a>
+          <a class="btn btn-primary" href="#products">Shop the drop</a>
+          <a class="btn btn-ghost" href="#drop">Get notified</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><b>100%</b><span>UK-shipped</span></div>
+          <div class="stat"><b>2–3 days</b><span>delivery</span></div>
+          <div class="stat"><b>1–2</b><span>products at a time</span></div>
         </div>
       </div>
     </section>
 
-    <!-- Product -->
-    <section class="section" id="product">
-      <div class="container product-inner">
-        <div class="product-media ph" role="img" aria-label="Ceiling fan with LED light product photo placeholder">
-          <span class="ph-label">📸 Product photo coming</span>
-        </div>
-        <div class="product-copy">
-          <p class="eyebrow">On the shelf now</p>
-          <h2>40W LED Ceiling Fan Lamp</h2>
-          <p class="product-tagline">Dimmable · Remote control · 3 speeds · E27 · UK plug</p>
-          <p class="product-desc">The ceiling light that's trending on TikTok UK — a fan and warm LED light in one, with a remote. Practical, quiet, and perfect for bedrooms and living rooms.</p>
-          <ul class="product-features">
-            <li>🇬🇧 Ships from the UK — 2–3 day delivery</li>
-            <li>💡 Dimmable 40W LED with remote (3 speeds)</li>
-            <li>🔌 Standard E27 fitting · UK 3-pin</li>
-            <li>🛡️ UKCA/CE compliant electricals</li>
-          </ul>
-          <div class="product-price">
-            <span class="price">£29.99</span>
-            <span class="price-note">Free UK delivery</span>
-          </div>
-          <div class="hero-actions">
-            <a class="btn btn-primary btn-lg" href="https://buy.stripe.com/28E5kC2TJ0K03fkgPBeAg00" target="_blank" rel="noopener">Buy now</a>
-            <a class="btn btn-ghost btn-lg" href="#drop">Notify me</a>
-          </div>
-        </div>
+    <!-- Trust strip -->
+    <section class="trust-strip">
+      <div class="container trust-inner">
+        <span>🇬🇧 Ships from the UK</span>
+        <span>🛡️ UKCA/CE compliant</span>
+        <span>🚚 Free UK delivery</span>
+        <span>⚡ 2–3 days</span>
       </div>
     </section>
 
-    <!-- Product 2 -->
-    <section class="section" id="product2">
-      <div class="container product-inner">
-        <div class="product-media ph" role="img" aria-label="Pet hair remover roller product photo placeholder">
-          <span class="ph-label">📸 Product photo coming</span>
-        </div>
-        <div class="product-copy">
-          <p class="eyebrow">On the shelf now</p>
-          <h2>Reusable Pet Hair Remover Roller</h2>
-          <p class="product-tagline">Self-cleaning · No refills · Sofa, car &amp; bedding</p>
-          <p class="product-desc">The vacuum can't get pet hair off the sofa. This self-cleaning roller pulls it out in one pass — brilliant on sofas, carpet, car seats and bedding.</p>
-          <ul class="product-features">
-            <li>🐾 Lifts embedded pet hair in a few strokes</li>
-            <li>🔄 Self-cleaning — empty the dirt compartment</li>
-            <li>🛋️ Sofa, carpet, car seats &amp; bedding</li>
-            <li>🇬🇧 Ships from the UK — 2–3 day delivery</li>
-          </ul>
-          <div class="product-price">
-            <span class="price">£14.99</span>
-            <span class="price-note">Free UK delivery</span>
-          </div>
-          <div class="hero-actions">
-            <a class="btn btn-primary btn-lg" href="https://buy.stripe.com/00w3cu79ZeAQ8zEgPBeAg02" target="_blank" rel="noopener">Buy now</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- First drop -->
-    <section class="section" id="drop">
+    <!-- Products (bento card grid) -->
+    <section class="section products" id="products">
       <div class="container">
-        <p class="eyebrow">Coming soon</p>
-        <h2>The first drop</h2>
-        <p class="section-note">We're researching the next viral product right now. One product, done properly, shipped from the UK.</p>
-        <form class="drop-form" id="drop-form">
-          <label class="sr-only" for="drop-email">Email address</label>
-          <input type="email" id="drop-email" name="email" placeholder="you@example.com" required autocomplete="email" />
-          <button type="submit" class="btn btn-primary">Notify me</button>
-        </form>
-        <p class="form-note" id="form-note" role="status"></p>
+        <p class="eyebrow">On the shelf now</p>
+        <h2>The drop</h2>
+        <p class="section-lead">Two products. Both solve a problem, both ship from the UK.</p>
+
+        <div class="product-grid">
+          <!-- Product 1 -->
+          <article class="product-card">
+            <div class="product-media ph" role="img" aria-label="Ceiling fan with LED light product photo placeholder">
+              <span class="ph-label">📸 Product photo this week</span>
+            </div>
+            <div class="product-body">
+              <span class="tag">Problem-solver</span>
+              <h3>40W LED Ceiling Fan Lamp</h3>
+              <p class="tagline">Dimmable · Remote · 3 speeds · E27 · UK plug</p>
+              <p class="desc">Too hot to sleep? The ceiling light the internet won't stop talking about — a fan and warm dimmable LED in one, fully remote. Bedroom &amp; living-room ready.</p>
+              <div class="chips">
+                <span>🇬🇧 Ships from UK</span>
+                <span>💡 Dimmable</span>
+                <span>🔌 UK 3-pin</span>
+                <span>🛡️ UKCA/CE</span>
+              </div>
+              <div class="price-row">
+                <div>
+                  <span class="price">£29.99</span>
+                  <span class="price-note">Free UK delivery</span>
+                </div>
+                <a class="btn btn-primary" href="https://buy.stripe.com/28E5kC2TJ0K03fkgPBeAg00" target="_blank" rel="noopener">Buy now</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product 2 -->
+          <article class="product-card">
+            <div class="product-media ph" role="img" aria-label="Pet hair remover roller product photo placeholder">
+              <span class="ph-label">📸 Product photo this week</span>
+            </div>
+            <div class="product-body">
+              <span class="tag">Problem-solver</span>
+              <h3>Reusable Pet Hair Remover Roller</h3>
+              <p class="tagline">Self-cleaning · No refills · Sofa, car &amp; bedding</p>
+              <p class="desc">The vacuum can't get pet hair off the sofa. This self-cleaning roller pulls it all out in a few strokes — sofa, carpet, car seats and bedding.</p>
+              <div class="chips">
+                <span>🇬🇧 Ships from UK</span>
+                <span>🐾 Lifts pet hair</span>
+                <span>🔄 Self-cleaning</span>
+                <span>🛋️ Sofa &amp; car</span>
+              </div>
+              <div class="price-row">
+                <div>
+                  <span class="price">£14.99</span>
+                  <span class="price-note">Free UK delivery</span>
+                </div>
+                <a class="btn btn-primary" href="https://buy.stripe.com/00w3cu79ZeAQ8zEgPBeAg02" target="_blank" rel="noopener">Buy now</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Drop list -->
+    <section class="section drop" id="drop">
+      <div class="container">
+        <div class="drop-card">
+          <p class="eyebrow">The next drop</p>
+          <h2>Be first to know</h2>
+          <p class="section-lead">We add a new problem-solving product when it passes our UK checks. Leave your email and we'll tell you.</p>
+          <form class="drop-form" id="drop-form">
+            <label class="sr-only" for="drop-email">Email address</label>
+            <input type="email" id="drop-email" name="email" placeholder="you@example.com" required autocomplete="email" />
+            <button type="submit" class="btn btn-primary">Notify me</button>
+          </form>
+          <p class="form-note" id="form-note" role="status"></p>
+        </div>
       </div>
     </section>
   </main>
